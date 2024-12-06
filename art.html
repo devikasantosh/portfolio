@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="art-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Devika Santosh</h1>
+    <p>Programmer, aspiring tools and pipeline TD</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">About + Showreel</a></li>
+        <li><a href="tools.html">Tools and Pipeline Projects</a></li>
+        <li><a href="games.html">Game Projects</a></li>
+        <li><a href="art.html">Art and Design Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <br>
+    <nav id="second-nav">
+            <ul>
+        <li><a href="#art">2D Art</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#animation">Animation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="art">
+
+    <h1>Art Projects</h1>
+    <!-- Bento-style grid layout -->
+    <div class="art-grid">
+      <img src="Assets\photo1703964769.jpeg" alt="Art Project 1" class="art-item" onclick="openGallery(0)">
+      <img src="Assets\Untitled_Artwork (8).png" alt="Art Project 2" class="art-item" onclick="openGallery(1)">
+      <img src="Assets\photo1703965160.jpeg" alt="Art Project 3" class="art-item" onclick="openGallery(2)">
+      <img src="Assets\animation.gif" alt="Art Project 3" class="art-item" onclick="openGallery(2)">
+      <!-- Add more images as needed -->
+    </div>
+
+    <!-- Gallery Overlay -->
+    <div id="galleryOverlay" class="overlay">
+      <span class="close" onclick="closeGallery()">&times;</span>
+      <img id="galleryImage" class="overlay-image" src="" alt="Gallery Image">
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+</section>
+<section id="design">
+
+    <h1>Design Projects</h1>
+    <h2>Music App UI</h2>
+    Created in 2 hours for Gradient, a UI ideathon by our university’s Android Club, one rainy July.
+    <br>
+    Teammate: Yashvardhan Gupta
+    <br>
+
+    <img src="Assets\musicapp\Fonts and Palette.png" class="center">
+    <br>
+    We drew inspiration from a vinyl record and tried to implement that classic aesthetic in a modern context. This led
+    us to design a clean and minimalist interface, with a nostalgic touch of circular elements and a <b>vinyl-inspired
+      player</b>.
+    <br>
+
+    The color palette was specifically chosen to give a theatrical feel inspired by <b>nightclubs and concerts</b>, and
+    the typography was kept simple to maintain the clean, minimalist aesthetic. We also ensured that the user experience
+    was smooth and intuitive, with easily accessible features and a clear, easy-to-understand layout.
+    <br>
+    <div class="design-grid">
+      <img src="Assets\musicapp\Welcome.png" alt="Art Project 1" class="art-item" onclick="openGallery(0)">
+      <img src="Assets\musicapp\Home.png" alt="Art Project 2" class="art-item" onclick="openGallery(1)">
+      <img src="Assets\musicapp\Search Page.png" alt="Art Project 3" class="art-item" onclick="openGallery(2)">
+      <img src="Assets\musicapp\Music.png" alt="Art Project 3" class="art-item" onclick="openGallery(2)">
+      <img src="Assets\musicapp\Playlists.png" alt="Art Project 3" class="art-item" onclick="openGallery(2)">
+      <img src="Assets\musicapp\Profile.png" alt="Art Project 3" class="art-item" onclick="openGallery(2)">
+      <!-- Add more images as needed -->
+    </div>
+
+    <!-- Gallery Overlay -->
+    <div id="galleryOverlay" class="overlay">
+      <span class="close" onclick="closeGallery()">&times;</span>
+      <img id="galleryImage" class="overlay-image" src="" alt="Gallery Image">
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+    This is one of my favourite creations, purely from the thrill of collaboratively creating something against a
+    deadline and seeing it come to life right in front of you.
+    <br>
+
+    Our design went on to win <b>second place</b> in the event.
+</section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

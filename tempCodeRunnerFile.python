@@ -1,0 +1,30 @@
+
+import math
+
+with open('C:\\Users\\Devika\\Desktop\\Advent of Code 24\\reactor.txt','r') as file:
+    n=len(file.readlines())
+    
+n=0
+safe=False
+nosafe=0
+
+for i in range(n):
+   for j in range(5):
+        if(file[i][j]>file[i][j+1]):
+            n=file[i][j]-file[i][j-1]
+            if (n>0 and n<4):
+                safe=True
+                nosafe+=1
+            else:
+                safe=False
+        elif(file[i][j]<file[i][j+1]):
+            n=file[i][j]-file[i][j-1]
+            if (n>0 and n<4):
+                safe=True
+                nosafe+=1
+            else:
+                safe=False
+
+print(nosafe)
+
+
