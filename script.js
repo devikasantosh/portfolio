@@ -70,3 +70,16 @@ const navLinks = document.querySelectorAll('nav ul li a');
       link.classList.add('active'); // Add the 'active' class to the current page link
     }
   });
+
+  document.getElementById("linkedin-icon").addEventListener("click", function() {
+  window.open("https://www.linkedin.com/in/devikasantosh/", "_blank");
+});
+
+document.getElementById("github-icon").addEventListener("click", function() {
+  window.open("https://github.com/devikasantosh", "_blank");
+});
+
+document.getElementById("behance-icon").addEventListener("click", function() {
+    console.log('Behance icon clicked');
+    window.open("https://www.behance.net/devikasantosh", "_blank");
+});
