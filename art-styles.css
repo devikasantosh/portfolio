@@ -107,7 +107,7 @@ nav ul li a.active {
   #second-nav {
     position: sticky;
     top: 0; /* Stick to the top of the viewport */
-    background-color: #252422; /* Background color for sticky nav */
+      background: linear-gradient(to right, #22577a, #38a3a5); /* Gradient from pink to orange */
     z-index: 10; /* Ensure it stays above other content */
     padding: 10px 0;
     box-shadow: 0 4px 2px -2px gray; /* Optional shadow effect */
@@ -127,12 +127,12 @@ nav ul li a.active {
   }
   
   #second-nav li a:hover {
-    color: #028090;
+    color: #252422;
   }
   
   #second-nav li a:focus,
   #second-nav li a.active {
-    color: #028090;
+    color: #252422;
   }
   
   #second-nav li a:hover,
@@ -284,6 +284,73 @@ h1{
 .fa-twitter {
     /* Custom styles for Twitter icon can go here */
 }
+
+footer {
+  position: relative; /* Ensure the footer can have effects like box-shadow */
+  box-shadow: 0px -10px 15px rgba(2, 128, 144, 0.53); /* Glow effect on top */
+}
+/* Footer Styling */
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.glass-btn {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 500px;
+  margin-left: 1em;
+  margin-right: 1em;  
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.blue-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+    -moz-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+    box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+
+    &:hover {
+      -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+      -moz-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+      box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);      
+    }
+  }
+}
+
+.icon-link {
+  display: inline-flex; /* Ensures the link behaves like a flex container */
+  align-items: center; /* Centers the image vertically */
+  justify-content: center; /* Centers the image horizontally */
+  text-decoration: none; /* Removes underline */
+}
+
+.icon-link img {
+  width: 100%; /* Makes the image take up 80% of its container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures image fits well within its container */
+  transition: transform 0.3s ease; /* Adds smooth hover animation */
+}
+
+.icon-link:hover img {
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
 
 
 #game-projects {
@@ -469,3 +536,5 @@ body {
       grid-template-columns: repeat(6, 1fr);
   }
 }
+
+

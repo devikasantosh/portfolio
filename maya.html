@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Page</title>
+  <link rel="icon" type="image/x-icon" href="Assets\favicon.png">
+
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -14,14 +16,14 @@
   <!-- Header -->
   <header>
     <h1>Devika Santosh</h1>
-    <p>Programmer, aspiring tools and pipeline TD</p>
+    <p>Programmer, aspiring Tools and Pipeline TD</p>
     <nav>
       <ul>
         <li><a href="index.html">About + Showreel</a></li>
-        <li><a href="maya.html">Maya Projects</a></li>
-        <li><a href="games.html">Game Projects</a></li>
-        <li><a href="art.html">Art and Design Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="maya.html">Tools and Pipeline</a></li>
+        <li><a href="games.html">Game</a></li>
+        <li><a href="art.html">Art and Design</a></li>
+        <li><a href="contact.html">Résumé and Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -29,32 +31,55 @@
   <!-- Main Content -->
   <main>
     <section id="game-projects">
+      
       <a href="archeology.html" class="project">
         <img src="Assets/Maya3.png" alt="Archeological Ruins Generator Tool">
         <div class="project-info">
           <h2>Archeological Ruins Generator Tool</h2>
-          <p class="tagline"></p>
+          <p class="tagline">Created using Maya and Python scripting, this script allows the artist to generate an archeological ruins scene by selecting 3D models of arches and pillars with varying levels of decay, and setting the number of 3D models and their relative distance.
+
+          </p>
         </div>
       </a>
-      <div class="project">
-        <img src="path/to/image2.jpg" alt="Project 2 Thumbnail">
+        <a href="naturalvariety.html" class="project">
+        <img src="Assets/Maya4.png" alt="Project 2 Thumbnail" width="300">
         <div class="project-info">
-          <h2>Project 2 Title</h2>
-          <p class="tagline">A brief tagline or description of Project 2</p>
+          <h2>Programming Natural Variety</h2>
+          <p class="tagline">Inspired by The <b>Science behind Pixar</b> exhibit on Programming Natural Variety!<br> I created a tool where an artist can create a patch of grass by adjusting colour, variation in colour, height and width of grass blades, area of patch, curvature, and number of blades of grass.</p>
         </div>
-      </div>
-      <!-- Repeat structure for additional projects -->
+      </a>
+      <a href="shader.html" class="project">
+        <img src="path/to/image2.jpg" alt="Project 3 Thumbnail">
+        <div class="project-info">
+          <h2>Technical Art - Shaders</h2>
+          <p class="tagline">A glitch effect shader created for CMU's Building Virtual Worlds Round 4, to respawn a fantasy character after they fall into a pit.</p>
+        </div>
+      </a>
+            <!-- Repeat structure for additional projects -->
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>Contact me at: devikasantosh@gmail.com</p>
+  <footer id="contact">
+    <p>Contact me at: <a href= "mailto:devikasantosh@gmail.com" style="color: #0077b5;">devikasantosh@gmail.com</a></p>
     <div class="social-icons">
-      <a href="https://twitter.com"><img src="images/social-icons/twitter-icon.png" alt="Twitter"></a>
-      <a href="https://linkedin.com"><img src="images/social-icons/linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="https://github.com"><img src="images/social-icons/github-icon.png" alt="GitHub"></a>
-    </div>
+      <div class="button-container">
+  
+        <div class="glass-btn blue-btn">
+            <img src="Assets\footer\linkedin-tile 3.png" alt="linkedin" class="social-icon" id="linkedin-icon" style="width: 5.5em">
+        </div>
+      
+        <div class="glass-btn blue-btn">
+
+          <img src="Assets\footer\github-tile 2.png" alt="github" class="social-icon" id="github-icon" style="width: 5.5em">
+      
+      </div>
+        
+        <div class="glass-btn blue-btn">
+          <img src="Assets\footer\behance-tile 2.png" alt="Behance" class="social-icon" id="behance-icon" style="width: 5.5em">
+        </div>
+      
+      </div>    </div>
   </footer>
   <script src="script.js"></script>
 </body>

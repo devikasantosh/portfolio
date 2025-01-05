@@ -83,6 +83,8 @@ nav ul li a.active {
     text-decoration: underline;
   }
   
+
+  
   /* Main content area takes up remaining space */
   main {
     flex: 1;
@@ -179,6 +181,10 @@ nav ul li a.active {
     margin: 10px 0;
   }
   
+  footer {
+    position: relative; /* Ensure the footer can have effects like box-shadow */
+    box-shadow: 0px -10px 15px rgba(2, 128, 144, 0.53); /* Glow effect on top */
+  }
   /* Footer Styling */
   footer .social-icons {
     margin-top: 10px;
@@ -288,6 +294,14 @@ nav ul li a.active {
 .resume-container, .contact-details {
   margin-bottom: 30px;
   text-align: center; /* Center text in both sections */
+  width: 230%; /* Ensure the sections don't stretch too wide */
+  max-width: 800px; /* Add a maximum width for large screens */
+}
+
+.resume-container iframe {
+  width: 100%; /* Adjust iframe to fit its container */
+  height: 1100px; /* Adjust height as needed */
+  border: none; /* Remove iframe border */
 }
 
 #resume-contact h2 {
@@ -295,6 +309,7 @@ nav ul li a.active {
   color: #22577a;
   margin-bottom: 15px;
 }
+
 
 .contact-details p, .contact-details a {
   font-size: 1.1em;
@@ -364,4 +379,36 @@ iframe {
 
 .icon-link:hover img {
   transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+
+
+
+
+
+/*Mobile friendly*/
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  #three-container-about img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  #showreel video {
+    width: 100%;
+    height: auto;
+  }
 }
