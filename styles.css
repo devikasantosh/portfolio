@@ -250,6 +250,34 @@ nav ul li a.active {
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
+
+.keywords {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.keyword {
+  background-color: #028090; /* Blue bubble background */
+  color: white;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.keyword-role {
+  background-color: #38a3a5; /* Blue bubble background */
+  color: white;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
 #game-projects {
   display: flex;
   flex-wrap: wrap;

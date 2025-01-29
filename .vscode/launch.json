@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Scotty3D Tests",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:\\Users\\Devika\\Scotty3D\\Scotty3D.exe", // Path to the executable
+            "args": ["--run-tests", "A0.task2.problems"], // Command-line arguments
+            "stopAtEntry": false,
+            "cwd": "C:\\Users\\Devika\\Scotty3D", // Working directory
+            "environment": [],
+            "externalConsole": true, // Enables output in an external console
+            "MIMode": "gdb", // Debugging mode
+            "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
