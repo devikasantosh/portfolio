@@ -398,7 +398,7 @@ body {
   }
   
   .project-description, .project-features, .project-technologies, .project-challenges {
-    margin-top: 30px;
+    margin-top: 0px;
   }
   
   h3 {
@@ -574,3 +574,115 @@ footer .social-icons a img {
   margin: 0 8px;
 }
 
+.project-info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 220px;
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.info-card p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.info-card-long {
+  background: #222;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  width: 660px;
+}
+
+.info-card-long h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.info-card-long p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.sticky-notes-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sticky-note {
+  background: #FFEB3B;
+  padding: 15px;
+  width: 220px;
+  transform: rotate(-3deg);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Container for the card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: 30px 0 30px 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: rotate(-3deg); /* Tilt the card by 3 degrees */
+  overflow: hidden; /* Ensure the gradient stays within bounds */
+  position: relative;
+}
+
+/* Gradient effect on top edge */
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Gradient height */
+  background: linear-gradient(to right, #22577a, #38a3a5);
+}
+
+/* Each row is displayed horizontally */
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Left column label should be right-aligned */
+.label {
+  font-weight: bold;
+  color: #2c3e50;
+  width: 150px; /* Fixed width to maintain alignment */
+  text-align: right; /* Align the label text to the right */
+}
+
+/* Right column description should be left-aligned */
+.description {
+  color: #7f8c8d;
+  flex: 1;
+  text-align: left; /* Align the description text to the left */
+}

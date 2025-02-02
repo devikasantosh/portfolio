@@ -45,7 +45,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     font-family: 'Montserrat', sans-serif;
 
   }
@@ -445,3 +445,4 @@ iframe {
   width: 100%;
   padding: 20px 0;
 }
+
