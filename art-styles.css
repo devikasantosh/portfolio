@@ -538,3 +538,21 @@ body {
 }
 
 
+
+
+.sticky-notes-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sticky-note {
+  background: #FFEB3B;
+  padding: 15px;
+  width: 220px;
+  transform: rotate(-3deg);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  border-radius: 5px;
+}

@@ -631,10 +631,10 @@ footer .social-icons a img {
 .sticky-note {
   background: #FFEB3B;
   padding: 15px;
-  width: 220px;
+  width: 440px;
   transform: rotate(-3deg);
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
 }
 
