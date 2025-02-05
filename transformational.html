@@ -78,16 +78,73 @@
       <br>
       <p><b>The Concept</b></p>
       <p>A physical structure with audio interactive components.</p>
-      <p>As you walk past it, you hear voices telling their stories. You feel educated, like you're learning something new. <i>And then suddenly, the voices are cut off.</i> Radio silence. You try to move back to where you heard the voices, you try to bring them back, to hear the end of their story, but you can't. It's lost.</p>
-      
-    </section>
-
-
-
-    <section class="media">
-      <img src="Assets\BVW_all.png" alt="BVW - all worlds" style="max-width: 100%; height: auto;">
+      <p>As you walk past it, you hear voices telling their stories. You feel educated, like you're learning something
+        new. <i>And then suddenly, the voices are cut off.</i> Radio silence. You try to move back to where you heard
+        the voices, you try to bring them back, to hear the end of their story, but you can't. It's lost.</p>
 
     </section>
+
+    <div class="design-grid">
+      <img src="Assets\fundies1.jpg" alt="Art Project 1" class="art-item" onclick="openGallery(0)" width="40%">
+      <img src="Assets\fundies2.png" alt="Art Project 2" class="art-item" onclick="openGallery(1)" width="40%">
+    </div>
+    <i>Early concept inspiration, and sketch. Notice how one side is higher to represent the information always being
+      louder. The other sides sees a smaller voice, taking a long time to rise; and when it does, it's shut down almost
+      immediately, and again takes a long time to gather up and rise again.</i>
+    <br><br>
+    <p><b>Ideation</b></p>
+    <ul>
+      <li>Access to information opens up and shuts down in waves. We have knowledge and then lose access and interest in
+        it, as it becomes more scarce.</li>
+      <li>We propose a <b>sculpture with an element of audio interactivity</b> to depict these waves of knowledge and
+        access to
+        it.</li>
+      <li>As the listener walks past the sculpture – audio keeps rising and they’re learning, getting more knowledge.
+      </li>
+      <li>Then, suddenly, the voice cuts off.</li>
+      <li>Concept of being at the right place, right time</li>
+      <li>Listeners are complicit</li>
+      <li>Trying to educate yourself -> trying to help out</li>
+      </li>
+    </ul>
+    <br><br>
+    <p><b>Further Ideation</b></p>
+
+    <p><b>Core Ideas</b></p>
+    <ul>
+      <li>The truth</li>
+      <ul>
+        <li>Educating the public</li>
+        <li>One story that has been lost/hidden - voice grows and cuts off</li>
+        <li>Book bannings</li>
+      </ul>
+      <li>Two sides of the story</li>
+      <ul>
+        <li>Showing how history can be manipulated
+        </li>
+        <li>Watered down version/misinformation vs real story
+        </li>
+        <li>Racial profiling - police radio vs real history
+        </li>
+        <li>Inventions - commercials/what became of it vs the real beginnings
+        </li>
+      </ul>
+    </ul>
+
+    <br><br>
+    <p><b>Deciding a theme</b></p>
+    <p>The team agreed upon using the erasure of women's contributions in history as the underlying theme of the exhibit.</p>
+<p>We also decided to incorporate a digital, AR segment to the installation alongside the physical one we had planned.</p>
+
+
+
+    <!-- Gallery Overlay -->
+    <div id="galleryOverlay" class="overlay">
+      <span class="close" onclick="closeGallery()">&times;</span>
+      <img id="galleryImage" class="overlay-image" src="" alt="Gallery Image">
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
 
   </main>
 
